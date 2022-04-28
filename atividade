@@ -36,8 +36,9 @@ container() {
   return Container(
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: NetworkImage(
-                  'https://yt3.ggpht.com/ytc/AKedOLTcCm5_qxNWV_hzrQC9MNDqb6QzXRIyl09P9vK7=s900-c-k-c0x00ffffff-no-rj'),
+              image: const NetworkImage(
+                  'https://i.scdn.co/image/ab6761610000e5eb2f71b65ef483ed75a8b40437',
+              ),
               colorFilter: ColorFilter.mode(
                 Colors.white.withOpacity(0.8),
                 BlendMode.modulate,
@@ -53,7 +54,7 @@ container() {
             width: 40,
             height: 40,
             decoration: BoxDecoration(
-              color: Colors.purple,
+              color: Colors.lightBlue,
               borderRadius: BorderRadius.circular(40),
             ),
             child: const Icon(
@@ -64,9 +65,9 @@ container() {
           )
         ]),
         const SizedBox(height: 105),
-        Row(children: [
-          const SizedBox(width: 20),
-          const Text(
+        Row(children: const [
+          SizedBox(width: 20),
+          Text(
               'Social Security Is \nRethinking How It Runs \nCustomer Service \nAfter Covid',
               style: TextStyle(
                 fontSize: 40,
@@ -80,7 +81,7 @@ container() {
           const SizedBox(width: 20),
           const Icon(
             Icons.circle,
-            color: Colors.purple,
+            color: Colors.lightBlue,
             size: 30.0,
           ),
           Column(children: const [
@@ -114,7 +115,7 @@ container() {
             color: Colors.white,
             size: 3.0,
           ),
-          Text('54 Upvote',
+          Text('54 Update',
               style: TextStyle(
                 fontSize: 15,
               ))
